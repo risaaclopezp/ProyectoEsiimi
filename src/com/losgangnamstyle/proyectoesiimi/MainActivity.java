@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
@@ -25,6 +27,12 @@ public class MainActivity extends Activity {
 		 * Evento del boton
 		 * 
 		 */
+		findViewById(R.id.button1).setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v){
+				
+			}
+		});
 		
 		
 	}
