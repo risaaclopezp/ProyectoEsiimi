@@ -7,5 +7,6 @@
     <string name="showtextID">ID</string>
     <string name="showtextPas">Contraseña</string>
     <string name="showBtnEnt">Entrar</string>
+    <string name="splashMe">Esiimi</string>
 
 </resources>
