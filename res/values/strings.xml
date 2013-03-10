@@ -9,5 +9,7 @@
     <string name="showBtnEnt">Entrar</string>
     <string name="splashMe">Esiimi</string>
     <string name="logo">Logo</string>
+    <string name="identi">ID del Alumno</string>
+    <string name="contrasena">Contraseña</string>
 
 </resources>
