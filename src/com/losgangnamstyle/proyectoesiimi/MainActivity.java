@@ -1,12 +1,15 @@
 package com.losgangnamstyle.proyectoesiimi;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
@@ -16,13 +19,14 @@ public class MainActivity extends Activity {
 	 */
 	
 	SharedPreferences login;
-	Persona persona;
+	public Persona persona;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
 		persona=new Persona();
+		checarUsuario();
+		setContentView(R.layout.activity_main);
 		/*
 		 * Evento del boton
 		 * 
@@ -30,7 +34,31 @@ public class MainActivity extends Activity {
 		findViewById(R.id.button1).setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v){
-				
+				String texID=(String)((EditText)findViewById(R.id.editText2)).getText().toString();
+				String texPas=(String)((EditText)findViewById(R.id.editText1)).getText().toString();
+				if(texID.equals("")){
+					mensageError2();
+					return;
+				}
+				if(texPas.equals("")){
+					mensageError3();
+					return;
+				}
+				if(texID.equals(String.valueOf(persona.getId1()))){
+					if(texPas.equals(persona.getPasw1())){
+						guardarCuenta(String.valueOf(persona.getId1()));
+						entrar();
+					}else{
+						mensageError();
+					}
+				}else if(texID.equals(String.valueOf(persona.getId2()))){
+					if(texPas.equals(persona.getPasw2())){
+						guardarCuenta(String.valueOf(persona.getId2()));
+						entrar();
+					}else{
+						mensageError();
+					}
+				}
 			}
 		});
 		
@@ -42,6 +70,42 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	public void entrar(){
+		Intent en=new Intent(this,VentanaPrincipal.class);
+		startActivity(en);
+	}
+	
+	public void mensageError(){
+		String t="Usuario ó Contraseña son incorrectos";
+		Toast.makeText(getApplicationContext(), t, Toast.LENGTH_SHORT).show();
+	}
+	
+	public void mensageError2(){
+		String t="Falta ID";
+		Toast.makeText(getApplicationContext(), t, Toast.LENGTH_SHORT).show();
+	}
+	
+	public void mensageError3(){
+		String t="Falta contraseña";
+		Toast.makeText(getApplicationContext(), t, Toast.LENGTH_SHORT).show();
+	}
+	
+	public void checarUsuario(){
+		Context x=this;
+		login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
+		if(login.getString("IDU", null)!=null){
+			entrar();
+		}
+	}
+	
+	public void guardarCuenta(String val){
+		Context x=this;
+		login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
+		SharedPreferences.Editor edi=login.edit();
+		edi.putString("IDU", val);
+		edi.commit();
 	}
 
 }

@@ -4,7 +4,7 @@ public class Persona {
 	private int id1,id2;
 	private String pasw1,pasw2;
 	
-	public void Presona(){
+	public Persona(){
 		this.id1=12345;
 		this.id2=54321;
 		this.pasw1="hola123";

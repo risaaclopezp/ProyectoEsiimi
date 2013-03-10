@@ -11,5 +11,6 @@
     <string name="logo">Logo</string>
     <string name="identi">ID del Alumno</string>
     <string name="contrasena">Contraseña</string>
+    <string name="textEntr">Entrar</string>
 
 </resources>
