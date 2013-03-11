@@ -164,7 +164,7 @@ public class ExamplesActivity extends FragmentActivity {
 
     @Override
     public void onSettingChanged(int prefId, int value) {
-      /*switch (prefId) {
+      switch (prefId) {
       case SandboxFragment.PREF_SPACING_TYPE:
         final int currentType = viewActionsContentView.getSpacingType();
         if (currentType == value)
@@ -209,7 +209,7 @@ public class ExamplesActivity extends FragmentActivity {
         return;
       default:
         return;
-      }*/
+      }
     }
   };
 }

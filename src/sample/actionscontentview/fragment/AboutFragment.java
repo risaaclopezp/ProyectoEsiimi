@@ -1,5 +1,6 @@
 package sample.actionscontentview.fragment;
 
+import com.losgangnamstyle.proyectoesiimi.Persona;
 import com.losgangnamstyle.proyectoesiimi.R;
 import sample.actionscontentview.ExamplesActivity;
 import android.app.Activity;
@@ -36,9 +37,15 @@ public class AboutFragment extends Fragment {
     final TextView adeudo = (TextView) v.findViewById(R.id.textViewAMC);
     final TextView grupo = (TextView) v.findViewById(R.id.textViewGrC);
     final TextView generacion = (TextView) v.findViewById(R.id.textViewGeC);
-    if(0==0){
+    
+    Context x=this.getActivity().getApplicationContext();
+	SharedPreferences login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
+	int idchek=login.getInt("IDU", 0);
+	Persona p=new Persona();
+    
+    if(idchek==p.getId1()){
     		id.setTextColor(Color.RED);
-	  		id.setText("12345");
+	  		id.setText(String.valueOf(idchek));
 	  		nombre.setTextColor(Color.RED);
 	  		nombre.setText("Oropeza Omar");
 	  		situacion.setTextColor(Color.RED);
@@ -51,9 +58,9 @@ public class AboutFragment extends Fragment {
 	  		grupo.setText("8-C");
 	  		generacion.setTextColor(Color.RED);
 	  		generacion.setText("AGO-2008 - DIC-2012");
-	  	}else if(0==1){
+	  	}else if(idchek==p.getId2()){
 	  		id.setTextColor(Color.BLACK);
-	  		id.setText("54321");
+	  		id.setText(String.valueOf(idchek));
 	  		nombre.setTextColor(Color.BLACK);
 	  		nombre.setText("López Rubén");
 	  		situacion.setTextColor(Color.BLACK);

@@ -1,6 +1,7 @@
 package sample.actionscontentview.fragment;
 
-import com.losgangnamstyle.proyectoesiimi.R;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.losgangnamstyle.proyectoesiimi.Persona;
+import com.losgangnamstyle.proyectoesiimi.R;
 
 public class CalificacionesFragment extends Fragment {
 	  public static final String TAG = CalificacionesFragment.class.getSimpleName();
@@ -37,7 +41,12 @@ public class CalificacionesFragment extends Fragment {
 	    final TextView c51 = (TextView) v.findViewById(R.id.textViewMat51C);
 	    final TextView c61 = (TextView) v.findViewById(R.id.textViewMat61C);
 	    
-	    if(0==0){
+	    Context x=this.getActivity().getApplicationContext();
+		SharedPreferences login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
+		int idchek=login.getInt("IDU", 0);
+		Persona p=new Persona();
+	    
+	    if(idchek==p.getId1()){
   	  		m1.setText("Programación de interfaces");
   	  		m2.setText("Inteligencia artificial");
   	  		m3.setText("Finanzas");
@@ -50,7 +59,7 @@ public class CalificacionesFragment extends Fragment {
   	  		c41.setText("9.56");
   	  		c51.setText("6.72");
   	  		c61.setText("7.22");
-  	  	}else if(0==1){
+  	  	}else if(idchek==p.getId2()){
   	  		m1.setText("Optativa");
 	  		m2.setText("Ingeniería de software");
 	  		m3.setText("Sistemas Avanzados");

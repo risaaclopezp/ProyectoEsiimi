@@ -1,6 +1,7 @@
 package sample.actionscontentview.fragment;
 
 import com.losgangnamstyle.proyectoesiimi.MainActivity;
+import com.losgangnamstyle.proyectoesiimi.Persona;
 import com.losgangnamstyle.proyectoesiimi.R;
 import sample.actionscontentview.ExamplesActivity;
 import sample.actionscontentview.fragment.SandboxFragment.OnSettingsChangedListener;
@@ -50,14 +51,20 @@ public class HorarioFragment extends Fragment {
   	  	btnMie.setTextColor(R.color.bottom_bar_text);
   	  	btnJue.setTextColor(R.color.bottom_bar_text);
   	  	btnVie.setTextColor(R.color.bottom_bar_text);
-  	  	if(0==0){
+  	  	
+  	  Context x=this.getActivity().getApplicationContext();
+		SharedPreferences login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
+		int idchek=login.getInt("IDU", 0);
+		Persona p=new Persona();
+		
+  	  	if(idchek==p.getId1()){
   	  		h1.setText("Programación de interfaces");
   	  		h2.setText("Inteligencia artificial");
   	  		h3.setText("Finanzas");
   	  		h4.setText("Optativa");
   	  		h5.setText("Base de datos");
   	  		h6.setText("Computo distribuido");
-  	  	}else if(0==1){
+  	  	}else if(idchek==p.getId2()){
   	  		h1.setText("Optativa");
 	  		h2.setText("Ingeniería de software");
 	  		h3.setText("Sistemas Avanzados");

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">ProyectoEsiimi</string>
-    <string name="action_settings">Settings</string>
+    <string name="exit">Salir</string>
     <string name="hello_world">Hello world!</string>
     <string name="showtextID">ID</string>
     <string name="showtextPas">Contraseña</string>

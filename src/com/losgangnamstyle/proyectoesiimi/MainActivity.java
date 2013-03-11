@@ -48,15 +48,15 @@ public class MainActivity extends Activity {
 					return;
 				}
 				if(texID.equals(String.valueOf(persona.getId1()))){
-					if(texPas.equals(persona.getPasw1())){
-						guardarCuenta(String.valueOf(persona.getId1()));
+					if(texPas.equals(String.valueOf(persona.getPasw1()))){
+						guardarCuenta(persona.getId1());
 						entrar();
 					}else{
 						mensageError();
 					}
 				}else if(texID.equals(String.valueOf(persona.getId2()))){
-					if(texPas.equals(persona.getPasw2())){
-						guardarCuenta(String.valueOf(persona.getId2()));
+					if(texPas.equals(String.valueOf(persona.getPasw2()))){
+						guardarCuenta(persona.getId2());
 						entrar();
 					}else{
 						mensageError();
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.principal, menu);
 		return true;
 	}
 	
@@ -98,16 +98,16 @@ public class MainActivity extends Activity {
 	public void checarUsuario(){
 		Context x=this;
 		login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
-		if(login.getString("IDU", null)!=null){
+		if(login.getInt("IDU", 0)!=0){
 			entrar();
 		}
 	}
 	
-	public void guardarCuenta(String val){
+	public void guardarCuenta(int val){
 		Context x=this;
 		login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
 		SharedPreferences.Editor edi=login.edit();
-		edi.putString("IDU", val);
+		edi.putInt("IDU", val);
 		edi.commit();
 	}
 

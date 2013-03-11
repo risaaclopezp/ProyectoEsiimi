@@ -265,7 +265,6 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f04001e;
-        public static final int action_settings=0x7f04007e;
         public static final int actions=0x7f040003;
         public static final int actionsContentView=0x7f040046;
         public static final int actions_width=0x7f040001;
@@ -282,6 +281,7 @@ containing a value of this type.
         public static final int edge=0x7f040007;
         public static final int editText1=0x7f040020;
         public static final int editText2=0x7f04001f;
+        public static final int exitS=0x7f04007e;
         public static final int full=0x7f040006;
         public static final int imageView1=0x7f04007b;
         public static final int none=0x7f040002;
@@ -308,6 +308,7 @@ containing a value of this type.
         public static final int prefSwipingTypeValue=0x7f040078;
         public static final int progress=0x7f04007d;
         public static final int right_offset=0x7f040000;
+        public static final int salir=0x7f04007f;
         public static final int tableRow34=0x7f04004f;
         public static final int tableRow45=0x7f040052;
         public static final int tableRow56=0x7f040055;
@@ -420,14 +421,15 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
+        public static final int principal=0x7f0c0001;
     }
     public static final class string {
         public static final int about_details=0x7f0a000d;
         public static final int about_play=0x7f0a000e;
         public static final int about_tutorial=0x7f0a000f;
-        public static final int action_settings=0x7f0a0002;
         public static final int app_name=0x7f0a0001;
         public static final int contrasena=0x7f0a000a;
+        public static final int exit=0x7f0a0002;
         public static final int hello_world=0x7f0a0003;
         public static final int identi=0x7f0a0009;
         public static final int link_to_sources=0x7f0a000c;

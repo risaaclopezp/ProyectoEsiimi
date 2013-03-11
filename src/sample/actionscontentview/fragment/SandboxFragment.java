@@ -143,11 +143,11 @@ public class SandboxFragment extends Fragment implements View.OnClickListener {
   public void onClick(final View v) {
     final int id = v.getId();
 
-    final int titleId=0;
-    final int valueId=0;
-    final int itemsArrayId=0;
-    final int valuesArrayId=0;
-/*
+    final int titleId;
+    final int valueId;
+    final int itemsArrayId;
+    final int valuesArrayId;
+
     switch (id) {
     case PREF_SPACING_TYPE:
       titleId = R.string.pref_spacing_type;
@@ -215,7 +215,7 @@ public class SandboxFragment extends Fragment implements View.OnClickListener {
       break;
     default:
       return;
-    }*/
+    }
 
     final FragmentTransaction ft = getFragmentManager().beginTransaction();
     Fragment prev = getFragmentManager().findFragmentByTag(ValueChooserDialogFragment.TAG);
@@ -229,7 +229,7 @@ public class SandboxFragment extends Fragment implements View.OnClickListener {
       @Override
       public void onSettingSelected(int id, int item) {
         final int[] values = getResources().getIntArray(valuesArrayId);
-/*
+
         switch (id) {
         case PREF_SPACING_TYPE: {
           final TextView viewValue = (TextView) v.findViewById(valueId);
@@ -268,7 +268,7 @@ public class SandboxFragment extends Fragment implements View.OnClickListener {
         }
         case PREF_SHOW_SHADOW:
           break;
-        }*/
+        }
 
         if (mSettingsChangedListener != null) {
           mSettingsChangedListener.onSettingChanged(id, values[item]);
