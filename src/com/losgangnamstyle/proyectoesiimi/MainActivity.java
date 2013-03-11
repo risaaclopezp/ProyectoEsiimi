@@ -1,14 +1,17 @@
 package com.losgangnamstyle.proyectoesiimi;
 
+import sample.actionscontentview.ExamplesActivity;
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -18,7 +21,7 @@ public class MainActivity extends Activity {
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
 	
-	SharedPreferences login;
+	public SharedPreferences login;
 	public Persona persona;
 	
 	@Override
@@ -73,7 +76,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void entrar(){
-		Intent en=new Intent(this,VentanaPrincipal.class);
+		Intent en=new Intent(this,ExamplesActivity.class);
 		startActivity(en);
 	}
 	

@@ -8,17 +8,218 @@
 package com.losgangnamstyle.proyectoesiimi;
 
 public final class R {
+    public static final class array {
+        /**  Actions 
+ <item>@null</item>
+        <item>@drawable/ic_link_dropbox</item>
+        <item>@drawable/ic_link_evernote</item>
+        <item>@drawable/ic_link_facebook</item>
+        <item>@drawable/ic_link_github</item>
+        <item>@drawable/ic_link_google_plus</item>
+        <item>@drawable/ic_link_lastfm</item>
+        <item>@drawable/ic_link_linkedin</item>
+        <item>@drawable/ic_link_skype</item>
+        <item>@drawable/ic_link_stackoverflow</item>
+        <item>@drawable/ic_link_twitter</item>
+        <item>@drawable/ic_link_vk</item>
+        <item>@drawable/ic_link_yandex</item>
+        <item>@drawable/ic_link_youtube</item>
+         */
+        public static final int actions_icons=0x7f070000;
+        /**  <item>category://bookmarks</item>
+        <item>http://www.dropbox.com</item>
+        <item>http://www.evernote.com</item>
+        <item>http://www.facebook.com</item>
+        <item>http://www.github.com</item>
+        <item>http://plus.google.com</item>
+        <item>http://www.lastfm.com</item>
+        <item>http://www.linkedin.com</item>
+        <item>http://www.skype.com</item>
+        <item>http://www.stackoverflow.com</item>
+        <item>http://www.twitter.com</item>
+        <item>http://www.vk.com</item>
+        <item>http://www.yandex.com</item>
+        <item>http://www.youtube.com</item>
+         */
+        public static final int actions_links=0x7f070002;
+        /**  <item>Bookmarks</item>
+        <item>Dropbox</item>
+        <item>Evernote</item>
+        <item>Facebook</item>
+        <item>GitHub</item>
+        <item>Google+</item>
+        <item>Last.fm</item>
+        <item>LinkedIn</item>
+        <item>Skype</item>
+        <item>Stackoverflow</item>
+        <item>Twitter</item>
+        <item>Vk</item>
+        <item>Yandex</item>
+        <item>Youtube</item>
+         */
+        public static final int actions_names=0x7f070001;
+        public static final int fade_max_value_strings=0x7f07000a;
+        public static final int fade_max_value_values=0x7f07000b;
+        public static final int fade_types=0x7f070008;
+        public static final int fade_types_values=0x7f070009;
+        public static final int fling_duration_strings=0x7f07000e;
+        public static final int fling_duration_values=0x7f07000f;
+        /**  Settings arrays 
+         */
+        public static final int spacing_types=0x7f070003;
+        public static final int spacing_types_short=0x7f070004;
+        public static final int spacing_types_values=0x7f070005;
+        public static final int swiping_types=0x7f07000c;
+        public static final int swiping_types_values=0x7f07000d;
+        public static final int width_strings=0x7f070006;
+        public static final int width_values=0x7f070007;
+    }
     public static final class attr {
+        /**  Actions layout ID to link at view creation time. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actions_layout=0x7f010005;
+        /**  Spacing value for actions container. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int actions_spacing=0x7f010004;
+        /**  Content layout ID to link at view creation time. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int content_layout=0x7f010006;
+        /**  Max fade value. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fade_max_value=0x7f010009;
+        /**  Default fade types. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td> Fade is disabled. </td></tr>
+<tr><td><code>actions</code></td><td>1</td><td> Fade applies to actions container. </td></tr>
+<tr><td><code>content</code></td><td>2</td><td> Fade applies to content container. </td></tr>
+<tr><td><code>both</code></td><td>3</td><td> Fade applies to every container. </td></tr>
+</table>
+         */
+        public static final int fade_type=0x7f010001;
+        /**  Indicates how long flinging will take time in milliseconds. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fling_duration=0x7f01000a;
+        /**  Drawable to be used to draw shadow dropped by content view to actions one. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int shadow_drawable=0x7f010007;
+        /**  Shadow width. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadow_width=0x7f010008;
+        /**  Spacing value. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spacing=0x7f010003;
+        /**  Default spacing types. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>right_offset</code></td><td>0</td><td> Spacing will be calculated as offset from right bound of view. </td></tr>
+<tr><td><code>actions_width</code></td><td>1</td><td> Spacing will be calculated as right bound of actions container. </td></tr>
+</table>
+         */
+        public static final int spacing_type=0x7f010000;
+        /**  Swiping edge width. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swiping_edge_width=0x7f01000b;
+        /**  Default swiping types. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>full</code></td><td>0</td><td> Swiping will be handled at any point of screen. </td></tr>
+<tr><td><code>edge</code></td><td>1</td><td> Swiping will be handled starting from screen edge only. </td></tr>
+</table>
+         */
+        public static final int swiping_type=0x7f010002;
+    }
+    public static final class bool {
+        public static final int default_pref_show_shadow=0x7f090000;
+    }
+    public static final class color {
+        public static final int actions_bg=0x7f080003;
+        public static final int actions_divider=0x7f080004;
+        public static final int blue_color=0x7f080005;
+        public static final int bottom_bar_bg=0x7f080002;
+        public static final int bottom_bar_text=0x7f080001;
+        public static final int divider=0x7f080000;
+        public static final int irregular_color=0x7f080006;
     }
     public static final class dimen {
+        public static final int actions_spacing=0x7f050009;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050005;
+        public static final int activity_vertical_margin=0x7f050006;
+        public static final int default_actionscontentview_actions_spacing=0x7f050001;
+        public static final int default_actionscontentview_spacing=0x7f050000;
+        public static final int default_actionscontentview_swiping_edge_width=0x7f050002;
+        public static final int default_pref_shadow_width=0x7f050003;
+        public static final int default_pref_swiping_edge_width=0x7f050004;
+        public static final int divider_large_size=0x7f050008;
+        public static final int divider_size=0x7f050007;
     }
     public static final class drawable {
         public static final int boton_amarillo=0x7f020000;
@@ -28,50 +229,235 @@ public final class R {
         public static final int boton_rojo=0x7f020004;
         public static final int boton_verde=0x7f020005;
         public static final int fondo=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int logoesiima=0x7f020008;
-        public static final int logoesiimad=0x7f020009;
+        public static final int ic_action_about=0x7f020007;
+        public static final int ic_action_settings=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int ic_link_dropbox=0x7f02000a;
+        public static final int ic_link_evernote=0x7f02000b;
+        public static final int ic_link_facebook=0x7f02000c;
+        public static final int ic_link_github=0x7f02000d;
+        public static final int ic_link_google_plus=0x7f02000e;
+        public static final int ic_link_lastfm=0x7f02000f;
+        public static final int ic_link_linkedin=0x7f020010;
+        public static final int ic_link_skype=0x7f020011;
+        public static final int ic_link_stackoverflow=0x7f020012;
+        public static final int ic_link_twitter=0x7f020013;
+        public static final int ic_link_vk=0x7f020014;
+        public static final int ic_link_yandex=0x7f020015;
+        public static final int ic_link_youtube=0x7f020016;
+        public static final int ic_menu_calificacion=0x7f020017;
+        public static final int ic_menu_home=0x7f020018;
+        public static final int ic_menu_horario=0x7f020019;
+        public static final int ic_menu_lista=0x7f02001a;
+        public static final int ic_menu_moreoverflow_normal_holo_light=0x7f02001b;
+        public static final int item_background_holo_light=0x7f02001c;
+        public static final int list_focused_holo=0x7f02001d;
+        public static final int list_longpressed_holo=0x7f02001e;
+        public static final int list_pressed_holo_light=0x7f02001f;
+        public static final int list_selector_background_transition_holo_light=0x7f020020;
+        public static final int list_selector_disabled_holo_light=0x7f020021;
+        public static final int logoesiima=0x7f020022;
+        public static final int progress_bg_holo_light=0x7f020023;
+        public static final int progress_horizontal_holo_light=0x7f020024;
+        public static final int progress_primary_holo_light=0x7f020025;
+        public static final int progress_secondary_holo_light=0x7f020026;
+        public static final int shadow=0x7f020027;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f080000;
-        public static final int action_settings=0x7f080005;
-        public static final int button1=0x7f080003;
-        public static final int editText1=0x7f080002;
-        public static final int editText2=0x7f080001;
-        public static final int imageView1=0x7f080004;
+        public static final int LinearLayout1=0x7f04001e;
+        public static final int action_settings=0x7f04007e;
+        public static final int actions=0x7f040003;
+        public static final int actionsContentView=0x7f040046;
+        public static final int actions_width=0x7f040001;
+        public static final int both=0x7f040005;
+        public static final int bottomBar=0x7f040045;
+        public static final int btn_jueves=0x7f04004a;
+        public static final int btn_lunes=0x7f040047;
+        public static final int btn_martes=0x7f040048;
+        public static final int btn_miercoles=0x7f040049;
+        public static final int btn_viernes=0x7f04004b;
+        public static final int button1=0x7f040021;
+        public static final int content=0x7f040004;
+        public static final int divider=0x7f040044;
+        public static final int edge=0x7f040007;
+        public static final int editText1=0x7f040020;
+        public static final int editText2=0x7f04001f;
+        public static final int full=0x7f040006;
+        public static final int imageView1=0x7f04007b;
+        public static final int none=0x7f040002;
+        public static final int prefFadeMaxValue=0x7f040068;
+        public static final int prefFadeMaxValueValue=0x7f040069;
+        public static final int prefFadeType=0x7f040066;
+        public static final int prefFadeTypeValue=0x7f040067;
+        public static final int prefFlingDuration=0x7f04006a;
+        public static final int prefFlingDurationValue=0x7f04006b;
+        public static final int prefShadowWidth=0x7f04006e;
+        public static final int prefShadowWidthValue=0x7f04006f;
+        public static final int prefShowShadow=0x7f04006c;
+        public static final int prefShowShadowValue=0x7f04006d;
+        public static final int prefSpacingActionsWidth=0x7f040075;
+        public static final int prefSpacingActionsWidthValue=0x7f040076;
+        public static final int prefSpacingType=0x7f040070;
+        public static final int prefSpacingTypeValue=0x7f040071;
+        public static final int prefSpacingWidth=0x7f040072;
+        public static final int prefSpacingWidthAdditionalValue=0x7f040073;
+        public static final int prefSpacingWidthValue=0x7f040074;
+        public static final int prefSwipingEdgeWidth=0x7f040079;
+        public static final int prefSwipingEdgeWidthValue=0x7f04007a;
+        public static final int prefSwipingType=0x7f040077;
+        public static final int prefSwipingTypeValue=0x7f040078;
+        public static final int progress=0x7f04007d;
+        public static final int right_offset=0x7f040000;
+        public static final int tableRow34=0x7f04004f;
+        public static final int tableRow45=0x7f040052;
+        public static final int tableRow56=0x7f040055;
+        public static final int tableRow67=0x7f040058;
+        public static final int tableRow78=0x7f04005b;
+        public static final int tableRow89=0x7f04005e;
+        public static final int tableRowAM=0x7f040015;
+        public static final int tableRowGe=0x7f04001b;
+        public static final int tableRowGr=0x7f040018;
+        public static final int tableRowHrMa=0x7f04004c;
+        public static final int tableRowID=0x7f040009;
+        public static final int tableRowMaCa=0x7f040023;
+        public static final int tableRowMaFa=0x7f040061;
+        public static final int tableRowMat1=0x7f040026;
+        public static final int tableRowMat2=0x7f04002b;
+        public static final int tableRowMat3=0x7f040030;
+        public static final int tableRowMat4=0x7f040035;
+        public static final int tableRowMat5=0x7f04003a;
+        public static final int tableRowMat6=0x7f04003f;
+        public static final int tableRowNombre=0x7f04000c;
+        public static final int tableRowPA=0x7f040012;
+        public static final int tableRowSitAc=0x7f04000f;
+        public static final int textView34=0x7f040050;
+        public static final int textView34C=0x7f040051;
+        public static final int textView45=0x7f040053;
+        public static final int textView45C=0x7f040054;
+        public static final int textView56=0x7f040056;
+        public static final int textView56C=0x7f040057;
+        public static final int textView67=0x7f040059;
+        public static final int textView67C=0x7f04005a;
+        public static final int textView78=0x7f04005c;
+        public static final int textView78C=0x7f04005d;
+        public static final int textView89=0x7f04005f;
+        public static final int textView89C=0x7f040060;
+        public static final int textViewAM=0x7f040016;
+        public static final int textViewAMC=0x7f040017;
+        public static final int textViewCalificacion=0x7f040025;
+        public static final int textViewFP=0x7f040022;
+        public static final int textViewFaltas1=0x7f040063;
+        public static final int textViewFaltas2=0x7f040064;
+        public static final int textViewFaltas3=0x7f040065;
+        public static final int textViewGe=0x7f04001c;
+        public static final int textViewGeC=0x7f04001d;
+        public static final int textViewGr=0x7f040019;
+        public static final int textViewGrC=0x7f04001a;
+        public static final int textViewHora=0x7f04004d;
+        public static final int textViewID=0x7f04000a;
+        public static final int textViewIDC=0x7f04000b;
+        public static final int textViewMat1=0x7f040027;
+        public static final int textViewMat11C=0x7f040028;
+        public static final int textViewMat12C=0x7f040029;
+        public static final int textViewMat13C=0x7f04002a;
+        public static final int textViewMat2=0x7f04002c;
+        public static final int textViewMat21C=0x7f04002d;
+        public static final int textViewMat22C=0x7f04002e;
+        public static final int textViewMat23C=0x7f04002f;
+        public static final int textViewMat3=0x7f040031;
+        public static final int textViewMat31C=0x7f040032;
+        public static final int textViewMat32C=0x7f040033;
+        public static final int textViewMat33C=0x7f040034;
+        public static final int textViewMat4=0x7f040036;
+        public static final int textViewMat41C=0x7f040037;
+        public static final int textViewMat42C=0x7f040038;
+        public static final int textViewMat43C=0x7f040039;
+        public static final int textViewMat5=0x7f04003b;
+        public static final int textViewMat51C=0x7f04003c;
+        public static final int textViewMat52C=0x7f04003d;
+        public static final int textViewMat53C=0x7f04003e;
+        public static final int textViewMat6=0x7f040040;
+        public static final int textViewMat61C=0x7f040041;
+        public static final int textViewMat62C=0x7f040042;
+        public static final int textViewMat63C=0x7f040043;
+        public static final int textViewMateria=0x7f04004e;
+        public static final int textViewMateriaCalificacion=0x7f040024;
+        public static final int textViewMateriaFaltas=0x7f040062;
+        public static final int textViewNombre=0x7f04000d;
+        public static final int textViewNombreC=0x7f04000e;
+        public static final int textViewPA=0x7f040013;
+        public static final int textViewPAC=0x7f040014;
+        public static final int textViewSiAc=0x7f040008;
+        public static final int textViewSitAc=0x7f040010;
+        public static final int textViewSitAcC=0x7f040011;
+        public static final int webview=0x7f04007c;
+    }
+    public static final class integer {
+        public static final int default_actionscontentview_fade_max_value=0x7f060000;
+        public static final int default_actionscontentview_fling_duration=0x7f060001;
+        public static final int default_pref_fade_max_value=0x7f060002;
+        public static final int default_pref_fling_delay=0x7f060003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int principal=0x7f030001;
-        public static final int splash_activity=0x7f030002;
+        public static final int about=0x7f030000;
+        public static final int action_list_item=0x7f030001;
+        public static final int actions=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int calificacion=0x7f030004;
+        public static final int category_list_item=0x7f030005;
+        public static final int content=0x7f030006;
+        public static final int example=0x7f030007;
+        public static final int horario=0x7f030008;
+        public static final int lista=0x7f030009;
+        public static final int pref_fade=0x7f03000a;
+        public static final int pref_other=0x7f03000b;
+        public static final int pref_shadow=0x7f03000c;
+        public static final int pref_spacing=0x7f03000d;
+        public static final int pref_swiping=0x7f03000e;
+        public static final int sandbox=0x7f03000f;
+        public static final int splash_activity=0x7f030010;
+        public static final int webview=0x7f030011;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f0c0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int contrasena=0x7f050009;
-        public static final int hello_world=0x7f050002;
-        public static final int identi=0x7f050008;
-        public static final int logo=0x7f050007;
-        public static final int showBtnEnt=0x7f050005;
-        public static final int showtextID=0x7f050003;
-        public static final int showtextPas=0x7f050004;
-        public static final int splashMe=0x7f050006;
-        public static final int textEntr=0x7f05000a;
+        public static final int about_details=0x7f0a000d;
+        public static final int about_play=0x7f0a000e;
+        public static final int about_tutorial=0x7f0a000f;
+        public static final int action_settings=0x7f0a0002;
+        public static final int app_name=0x7f0a0001;
+        public static final int contrasena=0x7f0a000a;
+        public static final int hello_world=0x7f0a0003;
+        public static final int identi=0x7f0a0009;
+        public static final int link_to_sources=0x7f0a000c;
+        public static final int logo=0x7f0a0008;
+        public static final int pref_fade=0x7f0a0017;
+        public static final int pref_fade_max_value=0x7f0a0019;
+        public static final int pref_fade_type=0x7f0a0018;
+        public static final int pref_other=0x7f0a001d;
+        public static final int pref_other_fling_duration=0x7f0a001e;
+        public static final int pref_shadow=0x7f0a0014;
+        public static final int pref_shadow_width=0x7f0a0016;
+        public static final int pref_show_shadow=0x7f0a0015;
+        /**  Setting strings 
+         */
+        public static final int pref_spacing=0x7f0a0010;
+        public static final int pref_spacing_actions=0x7f0a0013;
+        public static final int pref_spacing_type=0x7f0a0011;
+        public static final int pref_spacing_width=0x7f0a0012;
+        public static final int pref_swiping=0x7f0a001a;
+        public static final int pref_swiping_edge_width=0x7f0a001c;
+        public static final int pref_swiping_type=0x7f0a001b;
+        public static final int showBtnEnt=0x7f0a0006;
+        public static final int showtextID=0x7f0a0004;
+        public static final int showtextPas=0x7f0a0005;
+        public static final int sources_link=0x7f0a0000;
+        public static final int splashMe=0x7f0a0007;
+        public static final int textEntr=0x7f0a000b;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -83,11 +469,248 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f060001;
-        public static final int ButtonText=0x7f060002;
+        public static final int AppBaseTheme=0x7f0b0004;
+        public static final int AppTheme=0x7f0b0000;
+        public static final int ButtonText=0x7f0b0003;
+        public static final int HeaderText=0x7f0b0002;
+        public static final int HoloButton_Borderless=0x7f0b0001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ActionsContentView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActionsContentView_actions_layout com.losgangnamstyle.proyectoesiimi:actions_layout}</code></td><td> Actions layout ID to link at view creation time.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_actions_spacing com.losgangnamstyle.proyectoesiimi:actions_spacing}</code></td><td> Spacing value for actions container.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_content_layout com.losgangnamstyle.proyectoesiimi:content_layout}</code></td><td> Content layout ID to link at view creation time.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_fade_max_value com.losgangnamstyle.proyectoesiimi:fade_max_value}</code></td><td> Max fade value.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_fade_type com.losgangnamstyle.proyectoesiimi:fade_type}</code></td><td> Fade type.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_fling_duration com.losgangnamstyle.proyectoesiimi:fling_duration}</code></td><td> Indicates how long flinging will take time in milliseconds.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_shadow_drawable com.losgangnamstyle.proyectoesiimi:shadow_drawable}</code></td><td> Drawable to be used to draw shadow dropped by content view to actions one.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_shadow_width com.losgangnamstyle.proyectoesiimi:shadow_width}</code></td><td> Shadow width.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_spacing com.losgangnamstyle.proyectoesiimi:spacing}</code></td><td> Spacing value.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_spacing_type com.losgangnamstyle.proyectoesiimi:spacing_type}</code></td><td> Spacing type.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_swiping_edge_width com.losgangnamstyle.proyectoesiimi:swiping_edge_width}</code></td><td> Swiping edge width.</td></tr>
+           <tr><td><code>{@link #ActionsContentView_swiping_type com.losgangnamstyle.proyectoesiimi:swiping_type}</code></td><td> Swiping type.</td></tr>
+           </table>
+           @see #ActionsContentView_actions_layout
+           @see #ActionsContentView_actions_spacing
+           @see #ActionsContentView_content_layout
+           @see #ActionsContentView_fade_max_value
+           @see #ActionsContentView_fade_type
+           @see #ActionsContentView_fling_duration
+           @see #ActionsContentView_shadow_drawable
+           @see #ActionsContentView_shadow_width
+           @see #ActionsContentView_spacing
+           @see #ActionsContentView_spacing_type
+           @see #ActionsContentView_swiping_edge_width
+           @see #ActionsContentView_swiping_type
+         */
+        public static final int[] ActionsContentView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>
+          @attr description
+           Actions layout ID to link at view creation time. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:actions_layout
+        */
+        public static final int ActionsContentView_actions_layout = 5;
+        /**
+          <p>
+          @attr description
+           Spacing value for actions container. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:actions_spacing
+        */
+        public static final int ActionsContentView_actions_spacing = 4;
+        /**
+          <p>
+          @attr description
+           Content layout ID to link at view creation time. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:content_layout
+        */
+        public static final int ActionsContentView_content_layout = 6;
+        /**
+          <p>
+          @attr description
+           Max fade value. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:fade_max_value
+        */
+        public static final int ActionsContentView_fade_max_value = 9;
+        /**
+          <p>
+          @attr description
+           Fade type. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td> Fade is disabled. </td></tr>
+<tr><td><code>actions</code></td><td>1</td><td> Fade applies to actions container. </td></tr>
+<tr><td><code>content</code></td><td>2</td><td> Fade applies to content container. </td></tr>
+<tr><td><code>both</code></td><td>3</td><td> Fade applies to every container. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:fade_type
+        */
+        public static final int ActionsContentView_fade_type = 1;
+        /**
+          <p>
+          @attr description
+           Indicates how long flinging will take time in milliseconds. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:fling_duration
+        */
+        public static final int ActionsContentView_fling_duration = 10;
+        /**
+          <p>
+          @attr description
+           Drawable to be used to draw shadow dropped by content view to actions one. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:shadow_drawable
+        */
+        public static final int ActionsContentView_shadow_drawable = 7;
+        /**
+          <p>
+          @attr description
+           Shadow width. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:shadow_width
+        */
+        public static final int ActionsContentView_shadow_width = 8;
+        /**
+          <p>
+          @attr description
+           Spacing value. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:spacing
+        */
+        public static final int ActionsContentView_spacing = 3;
+        /**
+          <p>
+          @attr description
+           Spacing type. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>right_offset</code></td><td>0</td><td> Spacing will be calculated as offset from right bound of view. </td></tr>
+<tr><td><code>actions_width</code></td><td>1</td><td> Spacing will be calculated as right bound of actions container. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:spacing_type
+        */
+        public static final int ActionsContentView_spacing_type = 0;
+        /**
+          <p>
+          @attr description
+           Swiping edge width. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:swiping_edge_width
+        */
+        public static final int ActionsContentView_swiping_edge_width = 11;
+        /**
+          <p>
+          @attr description
+           Swiping type. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>full</code></td><td>0</td><td> Swiping will be handled at any point of screen. </td></tr>
+<tr><td><code>edge</code></td><td>1</td><td> Swiping will be handled starting from screen edge only. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:swiping_type
+        */
+        public static final int ActionsContentView_swiping_type = 2;
+    };
 }

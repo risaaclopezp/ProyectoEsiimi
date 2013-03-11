@@ -27,4 +27,3 @@ public class Persona {
 		return this.pasw2;
 	}
 }
-//hbhhhh

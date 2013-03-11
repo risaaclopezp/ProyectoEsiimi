@@ -3,6 +3,7 @@
 	<name>ProyectoEsiimi</name>
 	<comment></comment>
 	<projects>
+		<project>ExamplesActivity</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
