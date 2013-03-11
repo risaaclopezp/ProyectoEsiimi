@@ -1,24 +1,28 @@
 package sample.actionscontentview;
 
-import com.losgangnamstyle.proyectoesiimi.R;
 import sample.actionscontentview.adapter.ActionsAdapter;
 import sample.actionscontentview.fragment.AboutFragment;
 import sample.actionscontentview.fragment.CalificacionesFragment;
 import sample.actionscontentview.fragment.HorarioFragment;
 import sample.actionscontentview.fragment.ListaFragment;
 import sample.actionscontentview.fragment.SandboxFragment;
-import sample.actionscontentview.fragment.WebViewFragment;
 import shared.ui.actionscontentview.ActionsContentView;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.losgangnamstyle.proyectoesiimi.R;
 
 public class ExamplesActivity extends FragmentActivity {
 
@@ -212,4 +216,25 @@ public class ExamplesActivity extends FragmentActivity {
       }
     }
   };
+  
+  @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.principal, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	        case R.id.salir:
+	            // app icon in action bar clicked; go home
+	        	SharedPreferences preferences = getSharedPreferences("userk",Context.MODE_PRIVATE);
+	        	preferences.edit().remove("IDU").commit();
+	        	super.finish();
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
 }

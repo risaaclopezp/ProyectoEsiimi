@@ -28,6 +28,9 @@ public class HorarioFragment extends Fragment {
 	  .authority(HORARIO_AUTHORITY)
 	  .build();
 	  MainActivity obj = new MainActivity();
+	  
+	  private int idchek;
+	  private Persona p;
 
 	  @Override
 	  public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,8 +57,8 @@ public class HorarioFragment extends Fragment {
   	  	
   	  Context x=this.getActivity().getApplicationContext();
 		SharedPreferences login=x.getSharedPreferences("userk",Context.MODE_PRIVATE);
-		int idchek=login.getInt("IDU", 0);
-		Persona p=new Persona();
+		idchek=login.getInt("IDU", 0);
+		p=new Persona();
 		
   	  	if(idchek==p.getId1()){
   	  		h1.setText("Programación de interfaces");
@@ -81,14 +84,14 @@ public class HorarioFragment extends Fragment {
 	    	  btnMie.setTextColor(R.color.bottom_bar_text);
 	    	  btnJue.setTextColor(R.color.bottom_bar_text);
 	    	  btnVie.setTextColor(R.color.bottom_bar_text);
-	    	  if(0==0){
+	    	  if(idchek==p.getId1()){
 	    	  		h1.setText("Programación de interfaces");
 	    	  		h2.setText("Inteligencia artificial");
 	    	  		h3.setText("Finanzas");
 	    	  		h4.setText("Optativa");
 	    	  		h5.setText("Base de datos");
 	    	  		h6.setText("Computo distribuido");
-	    	  	}else if(0==1){
+	    	  	}else if(idchek==p.getId2()){
 	    	  		h1.setText("Optativa");
 	    	  		h2.setText("Ingeniería de software");
 	    	  		h3.setText("Sistemas Avanzados");
@@ -107,14 +110,14 @@ public class HorarioFragment extends Fragment {
 		    	  btnMie.setTextColor(R.color.bottom_bar_text);
 		    	  btnJue.setTextColor(R.color.bottom_bar_text);
 		    	  btnVie.setTextColor(R.color.bottom_bar_text);
-		    	  if(0==0){
+		    	  if(idchek==p.getId1()){
 		    	  		h1.setText("Programación de interfaces");
 		    	  		h2.setText("Inteligencia artificial");
 		    	  		h3.setText("Finanzas");
 		    	  		h4.setText("Optativa");
 		    	  		h5.setText("Base de datos");
 		    	  		h6.setText("Computo distribuido");
-		    	  	}else if(0==1){
+		    	  	}else if(idchek==p.getId2()){
 		    	  		h1.setText("Optativa");
 		    	  		h2.setText("Ingeniería de software");
 		    	  		h3.setText("Sistemas Avanzados");
@@ -133,14 +136,14 @@ public class HorarioFragment extends Fragment {
 		    	  btnMie.setTextColor(Color.CYAN);
 		    	  btnJue.setTextColor(R.color.bottom_bar_text);
 		    	  btnVie.setTextColor(R.color.bottom_bar_text);
-		    	  if(0==0){
+		    	  if(idchek==p.getId1()){
 		    	  		h1.setText("Programación de interfaces");
 		    	  		h2.setText("Inteligencia artificial");
 		    	  		h3.setText("Finanzas");
 		    	  		h4.setText("Optativa");
 		    	  		h5.setText("Base de datos");
 		    	  		h6.setText("Computo distribuido");
-		    	  	}else if(0==1){
+		    	  	}else if(idchek==p.getId2()){
 		    	  		h1.setText("Optativa");
 		    	  		h2.setText("Ingeniería de software");
 		    	  		h3.setText("Sistemas Avanzados");
@@ -159,14 +162,14 @@ public class HorarioFragment extends Fragment {
 		    	  btnMie.setTextColor(R.color.bottom_bar_text);
 		    	  btnJue.setTextColor(Color.CYAN);
 		    	  btnVie.setTextColor(R.color.bottom_bar_text);
-		    	  if(0==0){
+		    	  if(idchek==p.getId1()){
 		    	  		h1.setText("Programación de interfaces");
 		    	  		h2.setText("Inteligencia artificial");
 		    	  		h3.setText("Finanzas");
 		    	  		h4.setText("Optativa");
 		    	  		h5.setText("Base de datos");
 		    	  		h6.setText("Computo distribuido");
-		    	  	}else if(0==1){
+		    	  	}else if(idchek==p.getId2()){
 		    	  		h1.setText("Optativa");
 		    	  		h2.setText("Ingeniería de software");
 		    	  		h3.setText("Sistemas Avanzados");
@@ -185,14 +188,14 @@ public class HorarioFragment extends Fragment {
 		    	  btnMie.setTextColor(R.color.bottom_bar_text);
 		    	  btnJue.setTextColor(R.color.bottom_bar_text);
 		    	  btnVie.setTextColor(Color.CYAN);
-		    	  if(0==0){
+		    	  if(idchek==p.getId1()){
 		    	  		h1.setText("-");
 		    	  		h2.setText("-");
 		    	  		h3.setText("Finanzas");
 		    	  		h4.setText("-");
 		    	  		h5.setText("-");
 		    	  		h6.setText("-");
-		    	  	}else if(0==1){
+		    	  	}else if(idchek==p.getId2()){
 		    	  		h1.setText("Optativa");
 		    	  		h2.setText("-");
 		    	  		h3.setText("Sistemas Avanzados");
