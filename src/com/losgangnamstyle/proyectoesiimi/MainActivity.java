@@ -1,19 +1,20 @@
 package com.losgangnamstyle.proyectoesiimi;
 
 import sample.actionscontentview.ExamplesActivity;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
+
+public class MainActivity extends SherlockActivity {
 	
 	/*
 	 * Variables para actividad
@@ -49,6 +50,7 @@ public class MainActivity extends Activity {
 				if(texID.equals(String.valueOf(persona.getId1()))){
 					if(texPas.equals(String.valueOf(persona.getPasw1()))){
 						guardarCuenta(persona.getId1());
+						clearData();
 						entrar();
 					}else{
 						mensageError();
@@ -56,6 +58,7 @@ public class MainActivity extends Activity {
 				}else if(texID.equals(String.valueOf(persona.getId2()))){
 					if(texPas.equals(String.valueOf(persona.getPasw2()))){
 						guardarCuenta(persona.getId2());
+						clearData();
 						entrar();
 					}else{
 						mensageError();
@@ -70,7 +73,7 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getSupportMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 	
@@ -87,8 +90,6 @@ public class MainActivity extends Activity {
 	}
 	
 	public void entrar(){
-		((EditText)findViewById(R.id.editText1)).setText("");
-		((EditText)findViewById(R.id.editText2)).setText("");
 		Intent en=new Intent(this,ExamplesActivity.class);
 		startActivity(en);
 	}
@@ -122,6 +123,11 @@ public class MainActivity extends Activity {
 		SharedPreferences.Editor edi=login.edit();
 		edi.putInt("IDU", val);
 		edi.commit();
+	}
+	
+	public void clearData(){
+		((EditText)findViewById(R.id.editText1)).setText("");
+		((EditText)findViewById(R.id.editText2)).setText("");
 	}
 
 }

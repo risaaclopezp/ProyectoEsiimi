@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ProyectoEsiimi</string>
+    <string name="app_name">Esiima</string>
     <string name="exit">Salir</string>
     <string name="hello_world">Hello world!</string>
     <string name="showtextID">ID</string>
@@ -32,5 +32,6 @@
     <string name="pref_swiping_edge_width">Swiping edge width</string>
     <string name="pref_other">Other</string>
     <string name="pref_other_fling_duration">Fling duration</string>
+    <string name="titile_splash">Esiima</string>
 
 </resources>

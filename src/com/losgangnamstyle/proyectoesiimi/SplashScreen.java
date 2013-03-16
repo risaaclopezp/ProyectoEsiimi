@@ -1,12 +1,13 @@
 package com.losgangnamstyle.proyectoesiimi;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+
+import com.actionbarsherlock.app.SherlockActivity;
  
-public class SplashScreen extends Activity {
+public class SplashScreen extends SherlockActivity {
 	 
 	 /** Se le llama cuando la actividad es creada por primera vez*/
 	    @Override

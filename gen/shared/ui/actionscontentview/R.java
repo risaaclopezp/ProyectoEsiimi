@@ -8,23 +8,23 @@ package shared.ui.actionscontentview;
 
 public final class R {
 	public static final class id {
-		public static final int content = 0x7f040004;
-		public static final int edge = 0x7f040007;
-		public static final int both = 0x7f040005;
-		public static final int right_offset = 0x7f040000;
-		public static final int full = 0x7f040006;
-		public static final int none = 0x7f040002;
-		public static final int actions_width = 0x7f040001;
-		public static final int actions = 0x7f040003;
+		public static final int content = 0x7f040014;
+		public static final int edge = 0x7f040017;
+		public static final int both = 0x7f040015;
+		public static final int right_offset = 0x7f040010;
+		public static final int full = 0x7f040016;
+		public static final int none = 0x7f040012;
+		public static final int actions_width = 0x7f040011;
+		public static final int actions = 0x7f040013;
 	}
 	public static final class integer {
-		public static final int default_actionscontentview_fade_max_value = 0x7f060000;
-		public static final int default_actionscontentview_fling_duration = 0x7f060001;
+		public static final int default_actionscontentview_fade_max_value = 0x7f080001;
+		public static final int default_actionscontentview_fling_duration = 0x7f080002;
 	}
 	public static final class styleable {
 		public static final int ActionsContentView_spacing = 3;
 		public static final int ActionsContentView_fling_duration = 10;
-		public static final int[] ActionsContentView = { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b };
+		public static final int[] ActionsContentView = { 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c };
 		public static final int ActionsContentView_actions_layout = 5;
 		public static final int ActionsContentView_spacing_type = 0;
 		public static final int ActionsContentView_shadow_drawable = 7;
@@ -37,22 +37,22 @@ public final class R {
 		public static final int ActionsContentView_fade_max_value = 9;
 	}
 	public static final class attr {
-		public static final int swiping_edge_width = 0x7f01000b;
-		public static final int shadow_width = 0x7f010008;
-		public static final int actions_layout = 0x7f010005;
-		public static final int fade_max_value = 0x7f010009;
-		public static final int actions_spacing = 0x7f010004;
-		public static final int fling_duration = 0x7f01000a;
-		public static final int shadow_drawable = 0x7f010007;
-		public static final int content_layout = 0x7f010006;
-		public static final int spacing_type = 0x7f010000;
-		public static final int swiping_type = 0x7f010002;
-		public static final int spacing = 0x7f010003;
-		public static final int fade_type = 0x7f010001;
+		public static final int swiping_edge_width = 0x7f01006c;
+		public static final int shadow_width = 0x7f010069;
+		public static final int actions_layout = 0x7f010066;
+		public static final int fade_max_value = 0x7f01006a;
+		public static final int actions_spacing = 0x7f010065;
+		public static final int fling_duration = 0x7f01006b;
+		public static final int shadow_drawable = 0x7f010068;
+		public static final int content_layout = 0x7f010067;
+		public static final int spacing_type = 0x7f010061;
+		public static final int swiping_type = 0x7f010063;
+		public static final int spacing = 0x7f010064;
+		public static final int fade_type = 0x7f010062;
 	}
 	public static final class dimen {
-		public static final int default_actionscontentview_spacing = 0x7f050000;
-		public static final int default_actionscontentview_swiping_edge_width = 0x7f050002;
-		public static final int default_actionscontentview_actions_spacing = 0x7f050001;
+		public static final int default_actionscontentview_spacing = 0x7f070011;
+		public static final int default_actionscontentview_swiping_edge_width = 0x7f070013;
+		public static final int default_actionscontentview_actions_spacing = 0x7f070012;
 	}
 }
