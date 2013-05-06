@@ -46,4 +46,77 @@
 	    <item name="android:shadowRadius">2</item>
 	</style>
 
+    <style name="Theme.Esiima" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/Widget.Esiima.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Esiima.ActionBar</item>
+        <item name="actionDropDownStyle">@style/Widget.Esiima.ActionBar.Spinner</item>
+        <item name="android:actionDropDownStyle">@style/Widget.Esiima.ActionBar.Spinner</item>
+        <item name="actionBarItemBackground">@drawable/bg_selectable_item</item>
+        <item name="android:actionBarItemBackground">@drawable/bg_selectable_item</item>
+        <item name="android:tabWidgetStyle">@style/Widget.Esiima.TabWidget</item>
+        <item name="dropDownListViewStyle">@style/Widget.Esiima.ListView.DropDown</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Esiima.ListView.DropDown</item>
+        <item name="android:editTextStyle">@style/Widget.Esiima.EditText</item>
+    </style>
+
+    <style name="Theme.Esiima.NoActionBar" parent="Theme.Esiima">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.Esiima.EditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/text_field_orange</item>
+    </style>
+
+    <style name="Widget.Esiima.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_orange</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="Widget.Esiima.ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="background">@drawable/bg_actionbaresii</item>
+        <item name="android:background">@drawable/bg_actionbaresii</item>
+        <item name="backgroundSplit">@drawable/bg_actionbaresii</item>
+        <item name="android:backgroundSplit">@drawable/bg_actionbaresii</item>
+    </style>
+
+    <style name="Widget.Esiima.ListView.DropDown" parent="Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/bg_selectable_item</item>
+    </style>
+
+    <style name="Widget.Esiima.ActionBar.Spinner" parent="Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:dropDownSelector">@drawable/bg_selectable_item</item>
+    </style>
+
+    <style name="Widget.Esiima.TabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:tabStripLeft">@null</item>
+        <item name="android:tabStripRight">@null</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">8dip</item>
+        <item name="android:measureWithLargestChild">true</item>
+    </style>
+
+    <style name="Widget.Esiima.TabView" parent="Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/bg_tab</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="Widget.Esiima.Tab" parent="Widget.Esiima.TabView">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="Widget.Esiima.TabText" parent="Widget.Sherlock.ActionBar.TabText">
+        <item name="android:textAllCaps">false</item>
+    </style>
 </resources>

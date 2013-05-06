@@ -22,4 +22,9 @@
     <color name="actions_divider">#ff888888</color>
     <color name="blue_color">#0080C0</color>
     <color name="irregular_color">#FFCC33</color>
+    <color name="black_twenty">#33000000</color>
+    <color name="vowchr_orange">#CA4A1E</color>
+    <color name="expiring_yellow">#FFE1BD00</color>
+    <color name="expiring_green">#FF149610</color>
+    <color name="drawer_bg">#2099fc</color>
 </resources>

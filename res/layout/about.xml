@@ -4,203 +4,152 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF" >
 
-    <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
         <TextView
-            android:id="@+id/textViewSiAc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/textViewID"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewIDC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Situación Actual"
-            android:background="@color/blue_color"
-            android:textColor="#FFFFFF"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Nombre"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-        <TableRow
-            android:id="@+id/tableRowID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewNombreC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewID"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="ID"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textViewSitAc"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Situación"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewIDC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow>   
-        <TableRow
-            android:id="@+id/tableRowNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewSitAcC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewNombre"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Nombre"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textViewPA"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Promedio"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewNombreC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow>  
-        <TableRow
-            android:id="@+id/tableRowSitAc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewPAC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewSitAc"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Situación"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textViewAM"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Adeuda materias"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewSitAcC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow> 
-        <TableRow
-            android:id="@+id/tableRowPA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewAMC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewPA"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Promedio"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textViewGr"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Grupo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewPAC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow> 
-        <TableRow
-            android:id="@+id/tableRowAM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewGrC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewAM"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Adeuda materias"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textViewGe"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_color"
+            android:text="Generación"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewAMC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow> 
-        <TableRow
-            android:id="@+id/tableRowGr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewGeC"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/textViewGr"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Grupo"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:id="@+id/textViewGrC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow> 
-        <TableRow
-            android:id="@+id/tableRowGe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textViewGe"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue_color"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:text="Generación"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:id="@+id/textViewGeC"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-            
-        </TableRow>    
-    </TableLayout>
-
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>
