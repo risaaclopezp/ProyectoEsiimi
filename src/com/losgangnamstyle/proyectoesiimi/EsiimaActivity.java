@@ -18,6 +18,7 @@ public class EsiimaActivity extends SherlockFragmentActivity {
 		super.onCreate(savedInstanceState);
 		startActivity(new Intent(this,SplashScreen.class));
         setContentView(R.layout.main);
+        //f
         
         ActionBar bar= getSupportActionBar();
         bar.setCustomView(R.layout.image_logo);
